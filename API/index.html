@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/20b6b67421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>The Mealdb</title>
+</head>
+
+<body>
+    <!-- error handling -->
+    <div id="error" class="bg-light text-danger text text-center fw-bold w-25 mx-auto my-5 p-2 "style=" display:none">
+    </div>
+    <!-- search meal -->
+    <h2 class="text-center my-3 text-light">Welcome to TheMealDB</h2>
+    <div class="input-group  w-25 mx-auto ">
+        <input id="search-input" type="text" class="form-control px-3" placeholder="Search for a Meal...">
+        <button onclick="searchFood()" class="btn" type="button"><i class="fas fa-search"></i></button>
+    </div>
+    <!-- display meal detail -->
+    <div id="meal-detail" class=" my-4 h-25 w-50  card mx-auto">
+    </div>
+    <!-- meal categorires -->
+    <h5 id="meal-categories" class="text-center text-white ">Meal Categories</h5>
+    <div id="display-meal-categories" class=" my-5 row row-cols-4 mx-auto gx-5">
+    </div>
+     <!-- display meal result -->
+    <div id="display-meal" class=" my-5 row row-cols-4 mx-auto gx-5">
+    </div>
+    <script src="/API/mealdb.js"></script>
+</body>
+
+</html>
